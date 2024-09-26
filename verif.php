@@ -20,6 +20,7 @@
         }
 
         $_SESSION["username"] = $username;
+        unset($_SESSION["error"]);
         return header("Location: profil.php");
     }
 
